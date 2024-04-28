@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Conversor de Temperatura</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box-container">
+            <form action="">
+                <div class="temp_calculator_inputs">
+                    <h1 class="title">Conversor de Temperatura</h1>
+                    <fieldset class="calculator_value">
+                        <legend>Graus</legend>
+                        <input type="number" id="input_value" name="value">
+                        <select name="input" id="input">
+                            <option value="celsius">Celsius(&degC)</option>
+                            <option value="fahrenheit">Fahrenheit(&degF)</option>
+                        </select>
+                    </fieldset>
+
+                    <div class="caculator_input">
+                        <fieldset class="calculator_value">
+                            <legend>Converter Para</legend>
+    
+                            <select name="output" id="output">
+                                <option value="celsius">Celsius(&degC)</option>
+                                <option value="fahrenheit">Fahrenheit(&degF)</option>
+                            </select>
+                        </fieldset>
+                    </div>
+
+                    <div class="btn">
+                        <button type="button" id="convert" onclick="convertTemperature()">
+                            Converter
+                        </button>
+                        <button type="button" id="clean" onclick="reset()">
+                            Limpar
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="result-area">
+            <h1 id="result">0</h1>
+        </div>
+    </div>
+
+    <script src="Temp.js"></script>
+</body>
+</html>
